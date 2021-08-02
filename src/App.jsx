@@ -1,11 +1,12 @@
-import Dashboard from './pages/Dashboard'
 import {
 	BrowserRouter as Router,
 	Route,
 	Redirect,
 	Switch
 } from 'react-router-dom'
+import Dashboard from './pages/Dashboard'
 import ClientIntakeForm from './components/Forms/AddNewPatient/ClientIntakeForm'
+import PersonalHistory from './components/Forms/AddNewPatient/PersonalHistory'
 import Topbar from './components/Navigators/Topbar'
 import Sidebar from './components/Navigators/Sidebar'
 import useAuth from './hooks/useAuth'
@@ -41,12 +42,16 @@ function App() {
 					<Switch>
 						<Redirect exact from='/home' to='/' />
 						
-						<Route exact path='/'>
+						<Route exact path='/dashboard'>
 							<Dashboard />
 						</Route>
 						
 						<Route exact path='/client-intake-form'>
 							<ClientIntakeForm />
+						</Route>
+						
+						<Route exact path='/personal-history'>
+							<PersonalHistory />
 						</Route>
 					</Switch>
 				</div>
