@@ -1,0 +1,108 @@
+.sidebar {
+	flex: 1;
+	height: calc(100vh - 80px);
+	box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	position: sticky;
+	top: 0;
+}
+
+.sidebar__menu {
+	padding-top: 30px;
+}
+
+.sidebar__menuText {
+	margin-left: 20px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.sidebar__menuItems {
+	list-style: none;
+	padding-inline-start: 0;
+	width: 100%;
+	margin-top: 20px;
+
+	& > .dashboard {
+		margin-bottom: 10px;
+		padding-left: 25px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 95%;
+		border-top-right-radius: 22px;
+		border-bottom-right-radius: 22px;
+		&:hover {
+			color: #5383ff;
+			background: #eeeff8;
+		}
+	}
+}
+
+.sidebar__menuItem {
+	& > button {
+		width: 95%;
+		justify-content: left;
+		padding-left: 25px;
+		text-transform: capitalize;
+		border-top-right-radius: 22px;
+		border-bottom-right-radius: 22px;
+
+		& > .MuiButton-label {
+			padding: 0;
+			font-size: 16px;
+
+			& > svg {
+				font-size: 15px;
+				margin-left: auto;
+			}
+		}
+
+		&:hover {
+			color: #5383ff;
+			background: #eeeff8;
+		}
+	}
+}
+
+.sidebar__menuSubItems {
+	display: block;
+}
+
+.sidebar__menuSubItem {
+	& > a {
+		& > div {
+			padding: 10px 0 10px 40px;
+			margin-bottom: 10px;
+			width: 95%;
+			border-top-right-radius: 22px;
+			border-bottom-right-radius: 22px;
+			font-size: 15px;
+
+			&:hover,
+			&.active {
+				color: #5383ff;
+				background: #eeeff8;
+			}
+		}
+	}
+}
+
+.expand {
+	visibility: visible;
+	opacity: 1;
+	max-height: 100px;
+	transition: all 0.1s;
+}
+
+.hide {
+	visibility: hidden;
+	opacity: 0;
+	max-height: 0;
+	transition: all 0.1s;
+}
+
+@media screen and (max-width: 1200px) {
+	.sidebar {
+		display: none;
+	}
+}

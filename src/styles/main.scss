@@ -1,0 +1,33 @@
+@use './components/app';
+@use './components/sidebar';
+@use './components/topbar';
+@use './components/dashboard';
+@use './components/MainContent';
+@use './components/NewPatient';
+@use './components/chart1';
+@use './components/featuredInfo';
+@use './components/widgetSm';
+@use './components/widgetLg';
+
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	// font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	//   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	//   sans-serif;
+	font-family: 'Nunito', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
