@@ -1,0 +1,54 @@
+.patientDashbaord {
+	flex: 4;
+}
+
+.patientDashboardWrapper {
+	padding: 30px 50px;
+}
+
+.patientTitleContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.patientImg {
+	width: 128px !important;
+	height: 128px !important;
+}
+
+.patientDetailsWrapper {
+	display: flex;
+	align-items: flex-start;
+}
+
+.patientDetailsLeft {
+	flex: 1;
+	padding: 20px;
+	margin-right: 10px;
+	box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.17);
+	-webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.17);
+	-moz-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.17);
+}
+
+.patientDetail {
+	margin-bottom: 15px;
+	align-items: center;
+	display: flex;
+}
+
+.patientDetailsSubtitle {
+	margin: 25px 0 5px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #afaaaa;
+}
+
+.patientDetailsRight {
+	flex: 1;
+	padding: 20px;
+	box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.17);
+	-webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.17);
+	-moz-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.17);
+}

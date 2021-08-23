@@ -1,40 +1,28 @@
-import { ArrowDownward, ArrowUpward } from '@material-ui/icons'
+import { Person } from '@material-ui/icons'
 
 export default function FeaturedInfo() {
 	return (
-		<div className='featured'>
-			<div className='featuredItem'>
-				<span className='featuredTitle'>Revenue</span>
-				<div className='featuredMoneyContainer'>
-					<span className='featuredMoney'>$2,415</span>
-					<span className='featuredMoneyRate'>
-						-11.4%{' '}
-						<ArrowDownward className='featuredIcon negative' />
-					</span>
+		<div className='cards'>
+			<div className='card'>
+				<div className='CardDetailsContainer'>
+					<div className='cardTitle'>Number of Patients</div>
+					<div className='cardDetail'>3</div>
 				</div>
-				<span className='featuredSub'>Compared to last month</span>
+				<Person className='cardIcon' style={{ color: '#3a3ae6' }} />
 			</div>
-
-			<div className='featuredItem'>
-				<span className='featuredTitle'>Sales</span>
-				<div className='featuredMoneyContainer'>
-					<span className='featuredMoney'>$5,955</span>
-					<span className='featuredMoneyRate'>
-						+2.6% <ArrowUpward className='featuredIcon' />
-					</span>
+			<div className='card'>
+				<div className='CardDetailsContainer'>
+					<div className='cardTitle'>Number of Doctors</div>
+					<div className='cardDetail'>0</div>
 				</div>
-				<span className='featuredSub'>Compared to last month</span>
+				<Person className='cardIcon' style={{ color: '#46c346' }} />
 			</div>
-
-			<div className='featuredItem'>
-				<span className='featuredTitle'>Cost</span>
-				<div className='featuredMoneyContainer'>
-					<span className='featuredMoney'>$3,404</span>
-					<span className='featuredMoneyRate'>
-						+2.6% <ArrowUpward className='featuredIcon' />
-					</span>
+			<div className='card'>
+				<div className='CardDetailsContainer'>
+					<div className='cardTitle'>Patients Per Doctor</div>
+					<div className='cardDetail'>0</div>
 				</div>
-				<span className='featuredSub'>Compared to last month</span>
+				<Person className='cardIcon' style={{ color: '#dc4f4f' }} />
 			</div>
 		</div>
 	)

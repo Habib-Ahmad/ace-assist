@@ -1,51 +1,51 @@
 export const userData = [
 	{
 		name: 'Jan',
-		'Active User': 4000
+		'Number of patients': 23
 	},
 	{
 		name: 'Feb',
-		'Active User': 3000
+		'Number of patients': 34
 	},
 	{
 		name: 'Mar',
-		'Active User': 5000
+		'Number of patients': 39
 	},
 	{
 		name: 'Apr',
-		'Active User': 2000
+		'Number of patients': 56
 	},
 	{
 		name: 'May',
-		'Active User': 1600
+		'Number of patients': 78
 	},
 	{
 		name: 'Jun',
-		'Active User': 1100
+		'Number of patients': 109
 	},
 	{
 		name: 'Jul',
-		'Active User': 3000
+		'Number of patients': 119
 	},
 	{
 		name: 'Aug',
-		'Active User': 1600
+		'Number of patients': 146
 	},
 	{
 		name: 'Sep',
-		'Active User': 2900
+		'Number of patients': 157
 	},
 	{
 		name: 'Oct',
-		'Active User': 4000
+		'Number of patients': 169
 	},
 	{
 		name: 'Nov',
-		'Active User': 3800
+		'Number of patients': 177
 	},
 	{
 		name: 'Dec',
-		'Active User': 7500
+		'Number of patients': 190
 	}
 ]
 

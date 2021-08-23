@@ -3,11 +3,26 @@
 }
 
 .dashboardWrapper {
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 30px;
+	padding: 30px;
+	width: 100%;
 }
 
 .dashboardWidgets {
 	display: flex;
+	margin: 20px;
+}
+
+.pieChartWrapper {
+	display: flex;
+	padding: 20px;
+	box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.17);
+	-webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.17);
+	-moz-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.17);
+	justify-content: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+	.dashboardWrapper {
+		padding: 30px 0	;
+	}
 }

@@ -9,7 +9,8 @@ import ClientIntakeForm from './components/Forms/AddNewPatient/ClientIntakeForm'
 import PersonalHistory from './components/Forms/AddNewPatient/PersonalHistory'
 import Topbar from './components/Navigators/Topbar'
 import Sidebar from './components/Navigators/Sidebar'
-import useAuth from './hooks/useAuth'
+import PatientDashboard from './pages/PatientDashboard'
+// import useAuth from './hooks/useAuth'
 import Toast from 'toastr'
 
 Toast.options = {
@@ -30,8 +31,8 @@ Toast.options = {
 }
 
 function App() {
-	const { adminAuth } = useAuth()
-	console.log(adminAuth)
+	// const { adminAuth } = useAuth()
+	// console.log(adminAuth)
 
 	return (
 		<Router>
@@ -42,8 +43,16 @@ function App() {
 					<Switch>
 						<Redirect exact from='/home' to='/' />
 						
+						<Route exact path='/'>
+							<Dashboard />
+						</Route>
+						
 						<Route exact path='/dashboard'>
 							<Dashboard />
+						</Route>
+
+						<Route path='/patient/:userId'>
+							<PatientDashboard />
 						</Route>
 						
 						<Route exact path='/client-intake-form'>

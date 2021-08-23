@@ -1,12 +1,21 @@
-.chart {
-	margin: 20px;
+.pieChart {
+	display: flex;
+	flex: 4;
 	padding: 20px;
-	max-width: 100%;
 	box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.17);
 	-webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.17);
 	-moz-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.17);
 }
 
-.chartTitle{
+.pieChartTitle{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
 	margin-bottom: 20px;
+}
+.pieChartText{
+	font-size: 12px;
+	color: grey;
+	text-align: center;
+
 }

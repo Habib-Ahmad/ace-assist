@@ -11,13 +11,12 @@
 }
 
 .topbar__left {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 20px 0;
     flex: 1;
 	align-items: center;
 	justify-content: center;
     display: flex;
-	width: 100%;
+	// min-width: 20%;
 	background-color: #4c5782;
 }
 
@@ -101,7 +100,8 @@
 
 	.topbar__left {
 		display: flex;
+		flex: 1;
 		align-items: center;
-		width: 100%;
+		min-width: 30%;
 	}
 }
