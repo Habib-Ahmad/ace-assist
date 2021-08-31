@@ -5,7 +5,7 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess'
 import { SidebarData } from './SidebarData'
 import { Link } from 'react-router-dom'
 
-const Sidebar = (props) => {
+const Sidebar = () => {
 	const [navClass, setNavClass] = useState(SidebarData)
 
 	function ExpandMore(e, idx) {
