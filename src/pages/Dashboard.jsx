@@ -5,7 +5,7 @@ import PieChart from '../components/Charts/PieChart'
 import WidgetSm from '../components/Widgets/WidgetSm'
 import WidgetLg from '../components/Widgets/WidgetLg'
 import { userData } from '../DummyData'
-import axios from '../axios'
+import axios from '../utils/api'
 
 const DashBoard = () => {
 	const [pieChartData, setPieChartData] = useState([])

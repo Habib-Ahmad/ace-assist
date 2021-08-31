@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Avatar, Button } from '@material-ui/core'
-import axios from '../../axios'
+import axios from '../../utils/api'
 import { Link } from 'react-router-dom'
 
 export default function WidgetSm() {
